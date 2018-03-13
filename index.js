@@ -13,7 +13,17 @@ $('article').each(function(e){
     let tables = $(this).children('table');
     $(tables).each(function(i,t){
         let link = $(this).children('caption').first().children('h2').first().children('a').first();
-        console.log(' ',$(link).text());
+        console.log(' caption',$(link).text());
+        $(this).children('tbody').first().children('tr').each(function(i,tr){
+            console.log('<tr>');
+            let tdf = $(this).children('td').first();
+            if ($(tdf).hasClass('sub')) {
+                console.log('   ','sub heading');
+            }
+            else if ($(tdf).hasClass('subsub')) {
+                console.log('     ','sub-sub heading');
+            }
+        });
     });
 });
 
