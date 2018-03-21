@@ -1,5 +1,12 @@
 # Comparison of 6.13.1 4.8.7
 
+:toc: macro
+:toc-title:
+:toclevels: 99
+
+# Table of Contents
+toc::[]
+
 ## Node.js ES2015 Support
 
 ### syntax
